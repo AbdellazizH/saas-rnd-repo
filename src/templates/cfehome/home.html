@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}Home - {{ block.super }}{% endblock %}
+
+{% block content %}
+    <h2>Welcome to the {{title}}</h2>
+    <p>This is the home page of our Django app.</p>
+    Page visited {{page_visit_count}} times.
+{% endblock %}
