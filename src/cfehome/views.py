@@ -9,3 +9,9 @@ def home(request):
 
     context = {"title": title, "page_visit_count": queryset.count(),}
     return render(request, "cfehome/home.html", context)
+
+
+def about_view(request):
+    title = "About page"
+    context = {"title": title}
+    return render(request, "cfehome/about.html", context)

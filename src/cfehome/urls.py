@@ -20,6 +20,7 @@ from cfehome import views
 
 urlpatterns = [
     path('', views.home, name='home'),
+    path('about/', views.about_view, name='about'),
     # path('/visits', include('visits.urls')),
     path("admin/", admin.site.urls),
 ]
